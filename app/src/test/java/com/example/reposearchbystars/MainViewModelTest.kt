@@ -49,7 +49,7 @@ class MainViewModelTest {
         delay(1000)
 
 
-        //mainViewModel.response.value, this variable is declared in MainViewModel class
+        //mainViewModel.response.value is declared in MainViewModel class
         //and its value changed to true or false according to response
         Assert.assertTrue(mainViewModel.response.value==true)
 
