@@ -8,8 +8,6 @@ import dagger.hilt.android.testing.HiltTestApplication
 
 
 //application class for enabling hilt for test
-//this class will be called at the time of testing
-//to enable this class we have declared it in app build.gradle default config section
 class HiltTestRunner: AndroidJUnitRunner() {
 
     override fun newApplication(

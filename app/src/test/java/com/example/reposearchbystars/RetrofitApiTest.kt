@@ -85,8 +85,6 @@ class RetrofitApiTest {
         //checking if response is not null
         Assert.assertNotNull(response)
         //check if response is same as expected
-        //what is expected response, its a sample data we have amd we are expecting api response should match to this data
-        //so we will verify by comparing sample data with api response data
         Assert.assertTrue(resultResponse.equals(expectedResponse))
     }
 

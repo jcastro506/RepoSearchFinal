@@ -1,5 +1,6 @@
 package com.example.reposearchbystars.presentation.viewModel
 
+import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf

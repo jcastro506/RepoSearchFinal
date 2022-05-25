@@ -18,8 +18,6 @@ import javax.inject.Singleton
 
 
 //di class for testing
-//This class will be called at the time of testing
-//this is test module class for hilt
 @Module
 @InstallIn(SingletonComponent::class)
 object TestAppModule {

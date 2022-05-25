@@ -23,9 +23,7 @@ import org.junit.Test
 
 
 
-//uninstall module, this will uninstall RepoModule,
-// it means it will not use RepoModule which is main module of the application for hilt
-//It will only use test module
+ //use test module
 @UninstallModules(RepoModule::class)
 @HiltAndroidTest
 class MainScreenTest{
@@ -73,8 +71,6 @@ class MainScreenTest{
     @Test
       fun test_search_and_repo_item_click(){
 
-        // Here we are using tags which belongs to views
-        // and on the basis of those tags we are performing actions on the views
 
         //input text in search field
         composeRule.onNodeWithTag(Common.SEARCH_FIELD_TAG).performTextInput("freeCodeCamp")

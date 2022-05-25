@@ -12,7 +12,7 @@ import java.lang.reflect.Type
 
 
 
-//Repository to load data for test purpose
+//Repository to load data for testing
 class FakeRepository(private val apiInterface: RetrofitApi?) : RepoRepository{
 
 
@@ -21,9 +21,9 @@ class FakeRepository(private val apiInterface: RetrofitApi?) : RepoRepository{
 
         //if search query is not empty then it will return success response
         // otherwise it will return error response
-        //both files are places within the application in resources folder
+        //both files are within resources folder
         var json:String = if(query.isNotEmpty()) {
-            //this will load a local file named api_response
+            //this will load local file api_response
             MockResponseFileReader("api_response.json").content
         }else {
             MockResponseFileReader("error.json").content

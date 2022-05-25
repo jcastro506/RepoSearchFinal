@@ -51,7 +51,6 @@ class MainViewModelTest {
 
         //mainViewModel.response.value, this variable is declared in MainViewModel class
         //and its value changed to true or false according to response
-        //Here we are checking if its value is true or not
         Assert.assertTrue(mainViewModel.response.value==true)
 
 
